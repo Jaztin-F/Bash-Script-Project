@@ -80,7 +80,7 @@ send_alert() {
     local recipient="$ALERT_EMAIL"
     local sender="$ALERT_EMAIL"
     local subject="System Monitor Report"
-    local body="Greetings,\n\nWe, Justine Francisco, Jethro Malabar, Lester Dagansina, Joshua Magdagasang, and John Paul Colita, would like to inf>
+    local body="Greetings,\n\nWe, Justine Francisco, Jethro Malabar, Lester Dagansina, Joshua Magdagasang, and John Paul Colita, would like to inform"
 
     if [ $(echo "$cpu_usage > $CPU_THRESHOLD" | bc) -eq 1 ]; then
         body+="CPU Usage: $cpu_usage% (Threshold: $CPU_THRESHOLD%)\n"
